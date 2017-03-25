@@ -1,5 +1,11 @@
-@page donejs-plugin-codemirror
+@parent donejs-plugin-codemirror
+@module {can.Component} donejs-plugin-codemirror <donejs-plugin-codemirror>
 
-# donejs-plugin-codemirror
+A short description of the donejs-plugin-codemirror component
 
-In-browser code editor components for your DoneJS app Edit
+@signature `<donejs-plugin-codemirror>`
+
+@body
+
+## Use
+

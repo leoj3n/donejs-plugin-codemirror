@@ -1,9 +1,10 @@
 import QUnit from 'steal-qunit';
-import plugin from './donejs-plugin-codemirror';
+import { ViewModel } from './donejs-plugin-codemirror';
 
+// ViewModel unit tests
 QUnit.module('donejs-plugin-codemirror');
 
-QUnit.test('Initialized the plugin', function(){
-  QUnit.equal(typeof plugin, 'function');
-  QUnit.equal(plugin(), 'This is the donejs-plugin-codemirror plugin');
+QUnit.test('Has message', function(){
+  var vm = new ViewModel();
+  QUnit.equal(vm.message, 'This is the donejs-plugin-codemirror component');
 });

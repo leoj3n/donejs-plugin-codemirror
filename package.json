@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git://github.com/leoj3n/donejs-plugin-codemirror.git"
   },
+  "license": "MIT",
   "author": {
     "name": "Bitovi",
     "email": "joel@bitovi.com",
@@ -54,20 +55,29 @@
     ],
     "directories": {
       "lib": "src"
-    }
+    },
+    "plugins": [
+      "steal-less",
+      "steal-stache"
+    ]
   },
   "dependencies": {
+    "can-component": "github:canjs/can-component#master",
+    "can-define": "github:canjs/can-define#master",
+    "can-view-autorender": "github:canjs/can-view-autorender#master",
     "codemirror": "^5.25.0",
     "cssify": "^0.6.0"
   },
   "devDependencies": {
+    "done-serve": "^1.0.0",
+    "donejs-cli": "^1.0.0",
+    "generator-donejs": "^1.0.0",
     "jshint": "^2.9.1",
     "steal": "^1.3.1",
+    "steal-less": "github:stealjs/steal-less#master",
     "steal-qunit": "^1.0.1",
+    "steal-stache": "github:canjs/steal-stache#master",
     "steal-tools": "^1.2.0",
-    "testee": "^0.3.0",
-    "generator-donejs": "^1.0.0",
-    "donejs-cli": "^1.0.0",
-    "done-serve": "^1.0.0"
+    "testee": "^0.3.0"
   }
 }
