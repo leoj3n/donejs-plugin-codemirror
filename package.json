@@ -59,7 +59,13 @@
     "plugins": [
       "steal-less",
       "steal-stache"
-    ]
+    ],
+		"meta": {
+			"codemirror": {
+				"format": "global",
+				"exports": "CodeMirror"
+			}
+		}
   },
   "dependencies": {
     "can-component": "github:canjs/can-component#master",
