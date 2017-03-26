@@ -139,6 +139,8 @@ Add in `package.json`:
   },
 ```
 
+This is necessary because CodeMirror exports a global.
+
 ## Finally
 
 Run:
