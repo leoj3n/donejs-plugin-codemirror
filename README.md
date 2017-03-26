@@ -80,30 +80,27 @@ Edit `src/donejs-plugin-testing.stache`:
 <textarea>var thing = 'thing';</textarea>
 ```
 
-Edit `src/donejs-plugin-codemirror.less`:
+Edit `src/donejs-plugin-testing.less`:
 
 ```less
-donejs-plugin-codemirror {
+donejs-plugin-testing {
 	display: block;
 }
 
 .CodeMirror { height: auto; border: 1px solid #ddd; }
 ```
 
-Edit `src/donejs-plugin-codemirror.js`:
+Edit `src/donejs-plugin-testing.js`:
 
 ```
 import Component from 'can-component';
 import DefineMap from 'can-define/map/';
-import './donejs-plugin-codemirror.less';
-import view from './donejs-plugin-codemirror.stache';
+import './donejs-plugin-testing.less';
+import view from './donejs-plugin-testing.stache';
 
 import 'codemirror/lib/codemirror.css';
 import CodeMirror from 'codemirror';
-import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/javascript/javascript';
-import 'codemirror/mode/css/css';
-import 'codemirror/mode/css/css';
 import 'codemirror/addon/edit/matchbrackets';
 
 export const ViewModel = DefineMap.extend({
@@ -111,7 +108,7 @@ export const ViewModel = DefineMap.extend({
 });
 
 export default Component.extend({
-  tag: 'donejs-plugin-codemirror',
+  tag: 'donejs-plugin-testing',
   ViewModel,
   view,
 	events: {
@@ -150,7 +147,7 @@ Run:
 donejs develop
 ```
 
-Now, visit <http://localhost:8080/src/donejs-plugin-codemirror.html>.
+Now, visit <http://localhost:8080/src/donejs-plugin-testing.html>.
 
 ---
 

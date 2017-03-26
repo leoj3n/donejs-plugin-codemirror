@@ -5,10 +5,7 @@ import view from './donejs-plugin-codemirror.stache';
 
 import 'codemirror/lib/codemirror.css';
 import CodeMirror from 'codemirror';
-import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/javascript/javascript';
-import 'codemirror/mode/css/css';
-import 'codemirror/mode/css/css';
 import 'codemirror/addon/edit/matchbrackets';
 
 export const ViewModel = DefineMap.extend({
