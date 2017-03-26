@@ -1,8 +1,7 @@
 # donejs-plugin-codemirror
 
-[![Build Status](https://travis-ci.org/leoj3n/donejs-plugin-codemirror.png?branch=master)](https://travis-ci.org/leoj3n/donejs-plugin-codemirror)
+In-browser code editor components for your DoneJS app.
 
-In-browser code editor components for your DoneJS app Edit
 ---
 
 # How To: Integrate Third Party Packages into a DoneJS Plugin
