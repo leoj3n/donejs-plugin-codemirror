@@ -139,7 +139,7 @@ Add in `package.json`:
   },
 ```
 
-This is necessary because CodeMirror exports a global.
+This is necessary because CodeMirror exports a global. [More information](https://stealjs.com/docs/config.meta.html).
 
 ## Finally
 
