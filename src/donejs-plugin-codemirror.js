@@ -17,12 +17,14 @@ export default Component.extend({
   ViewModel,
   view,
 	events: {
-		inserted(el, ev) {
-			this.editor = CodeMirror.fromTextArea(el.childNodes[0], {
-				lineNumbers: true,
-				mode: "javascript",
-				matchBrackets: true
-			});
+		inserted(el) {
+			if(System.isPlatform("window")) {
+				this.editor = CodeMirror.fromTextArea(el.childNodes[0], {
+					lineNumbers: true,
+					mode: "javascript",
+					matchBrackets: true
+				});
+			}
 		}
 	}
 });
