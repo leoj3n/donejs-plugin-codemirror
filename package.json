@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "node build.js",
-    "develop": "done-serve --static --develop --port 8080",
+    "develop": "done-serve --develop --port 8080",
     "jshint": "jshint ./*.js ./src/ --config",
     "postpublish": "git push --tags && git checkout master && git branch -D release && git push",
     "release:major": "npm version major && npm publish",

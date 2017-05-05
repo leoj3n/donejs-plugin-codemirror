@@ -7,6 +7,7 @@ import 'codemirror/lib/codemirror.css';
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/addon/edit/matchbrackets';
+import 'codemirror/theme/blackboard.css';
 
 export const ViewModel = DefineMap.extend({
   editor: 'any'
@@ -22,7 +23,8 @@ export default Component.extend({
 				this.editor = CodeMirror.fromTextArea(el.childNodes[0], {
 					lineNumbers: true,
 					mode: "javascript",
-					matchBrackets: true
+					matchBrackets: true,
+					theme: "blackboard"
 				});
 			}
 		}
