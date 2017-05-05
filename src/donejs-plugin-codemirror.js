@@ -4,10 +4,10 @@ import './donejs-plugin-codemirror.less';
 import view from './donejs-plugin-codemirror.stache';
 
 import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/blackboard.css';
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/addon/edit/matchbrackets';
-import 'codemirror/theme/blackboard.css';
 
 export const ViewModel = DefineMap.extend({
   editor: 'any'
