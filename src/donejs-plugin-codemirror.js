@@ -10,7 +10,15 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/addon/edit/matchbrackets';
 
 export const ViewModel = DefineMap.extend({
-  editor: 'any'
+  editor: 'any',
+	body: {
+		type: 'string',
+		set: function (newval) {
+			console.log('GOODBYE', newval);
+			this.editor.setValue(newval);
+			return newval;
+		}
+	}
 });
 
 export default Component.extend({
@@ -20,7 +28,7 @@ export default Component.extend({
 	events: {
 		inserted(el) {
 			if(System.isPlatform("window")) {
-				this.editor = CodeMirror.fromTextArea(el.childNodes[0], {
+				this.viewModel.editor = CodeMirror.fromTextArea(el.childNodes[0], {
 					lineNumbers: true,
 					mode: "javascript",
 					matchBrackets: true,
